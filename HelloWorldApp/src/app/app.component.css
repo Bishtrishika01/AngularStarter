@@ -15,17 +15,9 @@
     height: auto;
     margin-bottom: 20px;
   }
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
+  .error-output{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
   }
-  button:hover {
-    background-color: #0056b3;
-  }
-  
