@@ -3,15 +3,22 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports:[RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [RouterOutlet],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'HelloWorldApp';
   imgUrl = "../assets/images/BL_logo_square_jpg.jpg";
+  url = "https://www.bridgelabz.com";
   
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.title = "HELLO FROM BRIDGELABZ";
   }
+
+  onClick(event: Event): void {
+    console.log("Save Button is clicked!", event);
+    window.open(this.url, "_blank");
+  }
 }
+
